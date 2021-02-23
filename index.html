@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="assets/common.blocks/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu-bar container__menu-bar">
+        <ul class="menu-bar__menu">
+          <li class="menu-bar__menuitem">
+            <a href="#" class="menu-bar__menulink">Sign in</a>
+          </li>
+          <li class="menu-bar__menuitem">
+            <a href="#" class="menu-bar__menulink">Join us</a>
+          </li>
+        </ul>
+      </nav>
+      <form action="#" method="get" class="c-form container__c-form" id="sign">
+        <fieldset class="c-form__textfield">
+          <label for="username" class="textfield__label"> Username </label>
+          <input
+            type="text"
+            class="textfield__input"
+            id="username"
+            name="userName"
+            minlength="3"
+            required
+          />
+          <div class="textfield__error">
+            User name should be at least 3 characters long (mandatory field)
+          </div>
+        </fieldset>
+
+        <fieldset class="c-form__textfield">
+          <label for="password" class="textfield__label"> Password </label>
+          <input
+            type="password"
+            class="textfield__input"
+            id="password"
+            name="userPass"
+            minlength="7"
+            required
+          />
+          <div class="textfield__error">
+            Password should be at least 7 characters long (mandatory field)
+          </div>
+        </fieldset>
+
+        <label class="c-form__checkbox">
+          <input class="checkbox_default" type="checkbox" name="keepSigned" />
+          <span class="checkbox_custom"></span>
+          <span class="textfield__label">Keep me signed in</span>
+        </label>
+
+        <button type="submit" class="c-form__submit">Sign in</button>
+      </form>
+      <nav class="menu-bar menu-bar_bottom container__menu-bar_bottom">
+        <ul class="menu-bar__menu menu-bar__menu_bottom">
+          <li class="menu-bar__menuitem_bottom">
+            <a href="#" class="menu-bar__menulink menu-bar__menulink_bottom"
+              >Forgot password</a
+            >
+          </li>
+          <li class="menu-bar__menuitem_bottom">
+            <a href="#" class="menu-bar__menulink menu-bar__menulink_bottom"
+              >Create an account</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+.menu-bar {
+    display:                flex;
+    box-sizing:             border-box;
+    width:                  100%;
+}
+
+.menu-bar__menu {
+    width:                  100%;
+    list-style:             none;
+    display:                flex;
+    gap:                    40px;
+    font-size:              20px;
+    padding:                0;
+}
+
+.menu-bar__menulink {
+    display:                inline-block;
+    box-sizing:             border-box;
+    text-decoration:        none;
+    font-family:            'Quicksand', sans-serif;
+    font-weight:            700;
+    color:                  rgba(245, 236, 227, 0.5);
+    padding:                8px;
+    border-bottom:          3px solid rgba(230, 106, 100, 0);
+}
+
+.menu-bar__menulink:hover {
+    border-bottom:          3px solid rgba(230, 106, 100, 1);
+    color:                  rgba(245, 236, 227, 1);
+}
+
+.menu-bar__menu_bottom {
+    justify-content:        space-around;
+    font-size:              14px;
+}
+
+.menu-bar__menulink_bottom {
+    border-bottom:          1px solid rgba(245, 236, 227, 0.5);
+}
+
+.menu-bar__menulink_bottom:hover {
+    border-bottom:          1px solid rgba(230, 106, 100, 1);
+    color:                  rgba(245, 236, 227, 1);
+}
+
+.menu-bar__menulink:focus {
+    outline:                none;
+    border:                 1px solid #23ae92;
+}
